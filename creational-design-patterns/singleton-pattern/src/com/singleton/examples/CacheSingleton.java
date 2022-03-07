@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class CacheSingleton {
 
-	/// Makes it singleton
+	/////////////// Makes this class as singleton ////////////////
 	private CacheSingleton() {
 	}
 
@@ -16,7 +16,7 @@ public class CacheSingleton {
 	public static CacheSingleton getInstance() {
 		return CacheSingletonHelper.INSTANCE;
 	}
-	///
+	///////////////////////////////////////////////////
 
 	private final Map<String, Object> map = new HashMap<>();
 
