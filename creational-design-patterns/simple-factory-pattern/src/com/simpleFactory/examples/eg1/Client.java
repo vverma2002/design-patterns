@@ -4,9 +4,15 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		Pet pet1 = PetFactory.getPet("DOG");
-		Pet pet2 = PetFactory.getPet("CAT");
-		pet1.makeSound();
-		pet2.makeSound();
+		Fruit f1 = new Apple("british apple", "red");
+		System.out.println(f1.printFruitInfo());
+		Fruit f2 = new Orange("china orange", "orange");
+		System.out.println(f2.printFruitInfo());
+
+		// new
+		Fruit f3 = FruitFactory.getFruit("apple");
+		System.out.println(f3.printFruitInfo());
+		Fruit f4 = FruitFactory.getFruit("orange");
+		System.out.println(f4.printFruitInfo());
 	}
 }

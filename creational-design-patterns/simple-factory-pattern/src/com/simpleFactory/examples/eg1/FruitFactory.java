@@ -1,4 +1,4 @@
-package com.simpleFactory.examples.eg2;
+package com.simpleFactory.examples.eg1;
 
 public class FruitFactory {
 
@@ -6,10 +6,10 @@ public class FruitFactory {
 		Fruit fruit = null;
 		switch (fruitStr) {
 		case "apple":
-			fruit = new Apple("apple");
+			fruit = new Apple("british apple", "red");
 			break;
 		case "orange":
-			fruit = new Orange("orange");
+			fruit = new Orange("china orange", "orange");
 			break;
 
 		default:

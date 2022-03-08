@@ -4,7 +4,7 @@ public class CheckersGameFactory extends GameFactory {
 
 	@Override
 	protected Game createGame() {
-		return new ChessGame();
+		return new ChessGame(64);
 	}
 
 }
