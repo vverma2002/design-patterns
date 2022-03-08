@@ -1,6 +1,6 @@
 package com.simpleFactory.examples.eg1;
 
-public class PetFactoryTest {
+public class Client {
 
 	public static void main(String[] args) {
 
