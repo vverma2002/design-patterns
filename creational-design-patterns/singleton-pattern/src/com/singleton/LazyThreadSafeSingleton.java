@@ -2,6 +2,8 @@ package com.singleton;
 
 public class LazyThreadSafeSingleton {
 
+	private static final Object lock = new Object();
+
 	private static LazyThreadSafeSingleton instance;
 
 	private LazyThreadSafeSingleton() {
@@ -9,7 +11,7 @@ public class LazyThreadSafeSingleton {
 
 	public static LazyThreadSafeSingleton getInstance() {
 		if (instance == null) {
-			synchronized (LazyThreadSafeSingleton.class) {
+			synchronized (lock) {
 				if (instance == null) {
 					instance = new LazyThreadSafeSingleton();
 				}
